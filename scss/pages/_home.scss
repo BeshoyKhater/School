@@ -192,95 +192,97 @@
 }
 
 // =========================================== service =================================
-.service {
-    padding: 5rem 0;
-    background-image: url("../../assets/images/bg-service.png");
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    &::before {
-        content: "";
-        background-image: url("../../assets/images/right-service.png");
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 40%;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }
-    &::after {
-        content: "";
-        background-image: url("../../assets/images/left-service.png");
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 40%;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }
-
-    .main-div {
+.home-page {
+    .service {
+        padding: 5rem 0;
+        background-image: url("../../assets/images/bg-service.png");
         position: relative;
-        
-        h2 {
-            text-align: center;
-            color: $white-color;
-            letter-spacing: -0.02em;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &::before {
+            content: "";
+            background-image: url("../../assets/images/right-service.png");
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 40%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
         }
-        
-        .group-buttons {
+        &::after {
+            content: "";
+            background-image: url("../../assets/images/left-service.png");
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 40%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+    
+        .main-div {
             position: relative;
-            z-index:7;
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            button {
-                background: rgba(255, 255, 255, 0.28);
-                outline: none;
-                border: none;
-                padding: .6rem 2.5rem;
-                border-radius: 5px;
+            
+            h2 {
+                text-align: center;
                 color: $white-color;
-                font-weight: 700;
-                @include ease ;
-
-                &.active-btn {
-                    color: $dark-red;
-                    background-color: $white-color;
+                letter-spacing: -0.02em;
+            }
+            
+            .group-buttons {
+                position: relative;
+                z-index:7;
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+                button {
+                    background: rgba(255, 255, 255, 0.28);
+                    outline: none;
+                    border: none;
+                    padding: .6rem 2.5rem;
+                    border-radius: 5px;
+                    color: $white-color;
+                    font-weight: 700;
+                    @include ease ;
+    
+                    &.active-btn {
+                        color: $dark-red;
+                        background-color: $white-color;
+                    }
                 }
             }
-        }
-
-        .boxs {
-            .box {
-                position: relative;
-                z-index: 7;
-                background-color: $white-color;
-                padding: 1.5rem;
-                border-radius: 16px;
-                box-shadow: 0px 30px 30px 0px #637AA61A;
-
-                h3 {
-                    color: #DCDCDC;
-                    font-size: 36px;
-                    font-weight: 700;
-                }
-
-                .link {
-                    img {
-                        height: 1.5rem;
-                        width: 1.5rem;
-                    }
-                    h4 {
-                        display: inline-block;
-                        color: black;
-                        text-decoration: underline;
-                        font-size: 18px;
+    
+            .boxs {
+                .box {
+                    position: relative;
+                    z-index: 7;
+                    background-color: $white-color;
+                    padding: 1.5rem;
+                    border-radius: 16px;
+                    box-shadow: 0px 30px 30px 0px #637AA61A;
+    
+                    h3 {
+                        color: #DCDCDC;
+                        font-size: 36px;
                         font-weight: 700;
+                    }
+    
+                    .link {
+                        img {
+                            height: 1.5rem;
+                            width: 1.5rem;
+                        }
+                        h4 {
+                            display: inline-block;
+                            color: black;
+                            text-decoration: underline;
+                            font-size: 18px;
+                            font-weight: 700;
+                        }
                     }
                 }
             }
@@ -289,19 +291,21 @@
 }
 
 @media screen and (max-width: $breakpoint-sm) {
-.service {
-        padding: 2rem 0;
-
-        .main-div {
-            .group-buttons {
-                gap: 1rem;
-
-                button {
-                    padding: .6rem 1.5rem;
+.home-page {
+    .service {
+            padding: 2rem 0;
+    
+            .main-div {
+                .group-buttons {
+                    gap: 1rem;
+    
+                    button {
+                        padding: .6rem 1.5rem;
+                    }
                 }
             }
         }
-    }
+}
 }
 
 // =============================== school ============================
