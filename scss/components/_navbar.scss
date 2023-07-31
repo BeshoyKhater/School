@@ -36,6 +36,13 @@
                 border: 1px solid $white-color;
                 padding: .5rem 1rem;
                 margin-left: 2rem;
+                [dir="rtl"] & {
+                    margin-left: auto;
+                    margin-right: 2rem;
+                    @media screen and (max-width: 991px) {
+                            margin-right: 0;
+                    }
+                }
                 @include ease;
 
                 &:hover {
@@ -81,7 +88,7 @@
         flex-direction: column;
         justify-content: center;
         padding-left: 0;
-        background: rgba(64, 131, 207, 0.93);
+        background: rgba($primary-color, $alpha: .9);
 
         ul.links {
             flex-direction: column;
@@ -155,6 +162,11 @@
     top: 1.6rem;
     cursor: pointer;
     z-index: 9;
+
+    [dir="rtl"] & {
+        right: auto;
+        left: 2.1rem;
+    }
     @include ease;
     //   [dir = rtl] & {
     //     left: 2.1rem;

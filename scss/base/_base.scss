@@ -16,6 +16,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 body {
     font-weight: normal;
     font-family: "calibri-400";
@@ -58,3 +59,6 @@ img {
 }
 
 
+[dir="rtl"] {
+        font-family: "rb-400";
+}

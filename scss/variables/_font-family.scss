@@ -7,7 +7,23 @@
   font-family: "calibri-700";
   src: url("../../assets/fonts/Calibri\ Bold.TTF");
 }
+// Font Family
+@font-face {
+  font-family: "rb-400";
+  src: url("../../assets/fonts/Rb/ArbFONTS-4_F4.ttf");
+}
+@font-face {
+  font-family: "rb-700";
+  src: url("../../assets/fonts/Rb/ArbFONTS-riyad-bank-Bold.ttf");
+}
 
-.fw-7 {
-    font-family: "calibri-700";
+
+  .fw-7 {
+      font-family: "calibri-700";
+  }
+  
+html[dir="rtl"] {
+  .fw-7 {
+      font-family: "rb-700";
+  }
 }

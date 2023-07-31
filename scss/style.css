@@ -31,8 +31,17 @@
 @font-face {
   font-family: "calibri-700";
   src: url("../../assets/fonts/Calibri Bold.TTF"); }
+@font-face {
+  font-family: "rb-400";
+  src: url("../../assets/fonts/Rb/ArbFONTS-4_F4.ttf"); }
+@font-face {
+  font-family: "rb-700";
+  src: url("../../assets/fonts/Rb/ArbFONTS-riyad-bank-Bold.ttf"); }
 .fw-7 {
   font-family: "calibri-700"; }
+
+html[dir="rtl"] .fw-7 {
+  font-family: "rb-700"; }
 
 /* SCSS */
 /* SCSS */
@@ -79,6 +88,9 @@ img {
   border-radius: 35px;
   background: #001C3D;
   background-clip: padding-box; }
+
+[dir="rtl"] {
+  font-family: "rb-400"; }
 
 .main-head .subtitle {
   font-weight: 700;
@@ -463,6 +475,8 @@ img {
       .service .main-div .boxs .box .link img {
         height: 1.5rem;
         width: 1.5rem; }
+        [dir="rtl"] .service .main-div .boxs .box .link img {
+          transform: rotate(-90deg); }
       .service .main-div .boxs .box .link h4 {
         display: inline-block;
         color: black;
@@ -497,6 +511,8 @@ img {
     .school .main-div .box p {
       font-weight: 700;
       line-height: 25px; }
+      [dir="rtl"] .school .main-div .box p {
+        line-height: 32px; }
 
 .contact {
   background-color: #001C3D;
@@ -721,6 +737,12 @@ img {
     padding: .5rem 1rem;
     margin-left: 2rem;
     transition: all 0.3s ease; }
+    [dir="rtl"] .navContainer .navContent .btn-link {
+      margin-left: auto;
+      margin-right: 2rem; }
+      @media screen and (max-width: 991px) {
+        [dir="rtl"] .navContainer .navContent .btn-link {
+          margin-right: 0; } }
     .navContainer .navContent .btn-link:hover {
       background-color: #ffffff;
       color: #001C3D;
@@ -754,7 +776,7 @@ img {
       flex-direction: column;
       justify-content: center;
       padding-left: 0;
-      background: rgba(64, 131, 207, 0.93);
+      background: rgba(0, 28, 61, 0.9);
       min-height: 100vh;
       right: 0;
       position: fixed;
@@ -811,6 +833,9 @@ img {
   cursor: pointer;
   z-index: 9;
   transition: all 0.3s ease; }
+  [dir="rtl"] .menuBtn {
+    right: auto;
+    left: 2.1rem; }
   @media (max-width: 991px) {
     .menuBtn {
       display: block;
