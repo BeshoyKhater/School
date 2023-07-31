@@ -37,15 +37,6 @@
 /* SCSS */
 /* SCSS */
 /* SCSS */
-@font-face {
-  font-family: 'gilroyMD';
-  src: url("../../assets/fonts/Gilroy-Medium.ttf"); }
-@font-face {
-  font-family: 'gilroySemiBold';
-  src: url("../../assets/fonts/Gilroy-SemiBold.ttf"); }
-@font-face {
-  font-family: 'gilroyBold';
-  src: url("../../assets/fonts/Gilroy-Bold.ttf"); }
 *,
 *::before,
 *::after {
