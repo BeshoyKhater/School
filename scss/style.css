@@ -397,13 +397,13 @@ img {
       height: 2rem; }
     .about .right .box ul li {
       font-size: 14px; } }
-.home-page .service {
+.service {
   padding: 5rem 0;
-  background-image: url("../../assets/images/bg-service.png");
+  background-image: url("../../assets/images/Rectangle 234.png");
   position: relative;
   background-repeat: no-repeat;
   background-size: cover; }
-  .home-page .service::before {
+  .service::before {
     content: "";
     background-image: url("../../assets/images/right-service.png");
     position: absolute;
@@ -414,7 +414,7 @@ img {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center; }
-  .home-page .service::after {
+  .service::after {
     content: "";
     background-image: url("../../assets/images/left-service.png");
     position: absolute;
@@ -425,19 +425,19 @@ img {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center; }
-  .home-page .service .main-div {
+  .service .main-div {
     position: relative; }
-    .home-page .service .main-div h2 {
+    .service .main-div h2 {
       text-align: center;
       color: #ffffff;
       letter-spacing: -0.02em; }
-    .home-page .service .main-div .group-buttons {
+    .service .main-div .group-buttons {
       position: relative;
       z-index: 7;
       display: flex;
       justify-content: center;
       gap: 2rem; }
-      .home-page .service .main-div .group-buttons button {
+      .service .main-div .group-buttons button {
         background: rgba(255, 255, 255, 0.28);
         outline: none;
         border: none;
@@ -446,24 +446,24 @@ img {
         color: #ffffff;
         font-weight: 700;
         transition: all 0.3s ease; }
-        .home-page .service .main-div .group-buttons button.active-btn {
+        .service .main-div .group-buttons button.active-btn {
           color: #942362;
           background-color: #ffffff; }
-    .home-page .service .main-div .boxs .box {
+    .service .main-div .boxs .box {
       position: relative;
       z-index: 7;
       background-color: #ffffff;
       padding: 1.5rem;
       border-radius: 16px;
       box-shadow: 0px 30px 30px 0px #637AA61A; }
-      .home-page .service .main-div .boxs .box h3 {
+      .service .main-div .boxs .box h3 {
         color: #DCDCDC;
         font-size: 36px;
         font-weight: 700; }
-      .home-page .service .main-div .boxs .box .link img {
+      .service .main-div .boxs .box .link img {
         height: 1.5rem;
         width: 1.5rem; }
-      .home-page .service .main-div .boxs .box .link h4 {
+      .service .main-div .boxs .box .link h4 {
         display: inline-block;
         color: black;
         text-decoration: underline;
@@ -471,11 +471,11 @@ img {
         font-weight: 700; }
 
 @media screen and (max-width: 576px) {
-  .home-page .service {
+  .service {
     padding: 2rem 0; }
-    .home-page .service .main-div .group-buttons {
+    .service .main-div .group-buttons {
       gap: 1rem; }
-      .home-page .service .main-div .group-buttons button {
+      .service .main-div .group-buttons button {
         padding: .6rem 1.5rem; } }
 .school {
   padding: 5rem 0; }

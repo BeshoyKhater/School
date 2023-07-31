@@ -192,10 +192,9 @@
 }
 
 // =========================================== service =================================
-.home-page {
     .service {
         padding: 5rem 0;
-        background-image: url("../../assets/images/bg-service.png");
+        background-image: url("../../assets/images/Rectangle\ 234.png");
         position: relative;
         background-repeat: no-repeat;
         background-size: cover;
@@ -288,10 +287,9 @@
             }
         }
     }
-}
+
 
 @media screen and (max-width: $breakpoint-sm) {
-.home-page {
     .service {
             padding: 2rem 0;
     
@@ -304,8 +302,8 @@
                     }
                 }
             }
-        }
-}
+    }
+
 }
 
 // =============================== school ============================
