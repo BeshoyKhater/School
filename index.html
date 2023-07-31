@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Bootstrap -->
+    <link href="https://fastly.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        
+        
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
+        <title>School</title>
+        <link rel="stylesheet" href="./scss/style.css">
+</head>
+
+<body>
+    <!-- start navbar section -->
+    <nav class='navContainer home-nav'>
+        <div class='menuBtn'>
+            <div class="btnLine"></div>
+            <div class="btnLine"></div>
+            <div class="btnLine"></div>
+        </div>
+        <div class="logo d-block d-lg-none">
+            <a href="/">
+                <img src="./assets/images/logo.svg" alt="MuzeOne" />
+            </a>
+        </div>
+
+        <div class='navContent'>
+            <div class='linksContainer d-flex align-items-center '>
+                <div class="container">
+                    <div class="row align-items-center flex-column flex-md-row">
+                        <div class="col-2">
+                            <div class="logo d-none d-lg-block">
+                                <a href="/">
+                                    <img src="./assets/images/logo.svg" alt="MuzeOne" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <ul class="links list-unstyled align-items-center justify-content-center  m-0">
+                                <li>
+                                    <a href="/" class="navLink active-link">
+                                        Home
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#about" class="navLink ">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#service" class="navLink ">
+                                        Our Services
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#sections" class="navLink ">
+                                        Our Sections
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#contact" class="navLink ">
+                                        Contacts
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center justify-content-md-center  col-12">
+                            <div class="right-section d-flex align-items-center flex-lg-row flex-column justify-content-center">
+                                <div class=" d-flex mb-lg-0 mt-lg-0  mb-md-5 mt-md-4 mb-5 mt-4">
+                                    <label for="lang"><img src="./assets/images/language.svg" alt="language"></label>
+                                    <select name="lang" id="lang">
+                                        <option value="English">English</option>
+                                        <option value="Arabic">Arabic</option>
+                                    </select>
+                                </div>
+                            
+                                <a href="student.html" class="d-flex align-items-center btn-link">
+                                    Student registration
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End of navbar section -->
+
+    <main class="home-page ">
+        <!-- start hero secion -->
+        <hr>
+        <div class="hero d-flex flex-column justify-content-center align-items-center" >
+            <div class="container">
+                <div class="hero-content">
+                    <div class="row justify-content-lg-center justify-content-md-start  align-items-center g-lg-5 g-3">
+                            <div class="col-lg-6 col-md-10 col-12 ">
+                                <div class="left-side"> 
+                                <h3>
+                                   <span>
+                                     Creativity, 
+                                   </span>
+                                   <br/>
+                                   <span>
+                                    Critical thinking and, 
+                                  </span>
+                                  <span class="colored-text right-side">
+                                    Cooperation.
+                                  </span>
+                                </h3>
+        
+                                <p class="py-3 op">
+                                    Digital Culture Schools provide modern innovative Project-Based Learning (PBL) using modern technology such as Artificial Intelligence (AI) and keeping pace with digital transformation
+                                </p>
+                                <button class="banner-button mb-lg-5 mb-4">
+                                    Student Registration
+                                </button>
+                               <div class="d-flex justify-content-start align-items-center statistics">
+                                <div class="box">
+                                    <h3>20 K</h3>
+                                    <p>Students the first year</p>
+                                </div>
+                                <div class="box">
+                                    <h3> 1 M </h3>
+                                    <p>Students in 2026r</p>
+                                </div>
+                                  
+                               </div>
+                             </div>
+                            </div>
+        
+                            
+                            <div class="col-lg-6 ">
+                                <div class="right-side">
+                                    <div class="first-img">
+                                        <img  src="./assets//images/home-1.png" alt="boys">
+                                    </div>
+                                    <div class="d-flex justify-content-center second-img">
+                                        <img  src="./assets//images/home-2.png" alt="class-boys">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+ 
+
+        <!-- about -->
+        <div class="container">
+            <section class="about" id="about">
+                <div class="row justify-content-between align-items-center g-lg-5 g-3">
+                    <div class="col-lg-6">
+                        <div class="left">
+                            <img src="./assets/images/about-.png" alt="about-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="right">
+                            <h2 class="mb-lg-5 mb-4">About Digital Culture Schools</h2>
+                            <div class="box d-flex align-items-start justify-content-between mb-4">
+                                <div class="img">
+                                    <img src="./assets/images/one-icon-about.svg" alt="icon-one">
+                                </div>
+                                <div class="content">
+                                    <h4>OUR VISION</h4>
+                                    <ul>
+                                        <li>
+                                            In Digital Culture Schools, we believe in the strength of the mind and the need to develop it by providing an
+                                            educational environment that promotes creativity, critical thinking, and cooperation
+                                        </li>
+                                        <li>
+                                            Digital Culture Schools provide modern innovative Project-Based Learning (PBL) using modern technology such as
+                                            Artificial Intelligence (AI) and keeping pace with digital transformation.
+                                        </li>
+                                        <li>
+                                            Our schools instill Islamic values in the students' minds and spirits as they develop their skills so that they can be
+                                            lifelong learners and responsible citizens who are able to lead the future.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="box d-flex align-items-start justify-content-between">
+                                <div class="img">
+                                    <img src="./assets/images/two-icon-about.svg" alt="icon-one">
+                                </div>
+                                <div class="content">
+                                    <h4>OUR MISSION</h4>
+                                    <ul>
+                                        <li>
+                                            Preparing a cultivated generation that possesses the skills that qualify it to face the challenges of the age and lead
+                                            the future.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- service -->
+        <section class="service" id="service">
+            <div class="container">
+                <div class="main-div">
+                    <h2 class="fw-7 mb-5">School Services</h2>
+                    <div class="group-buttons">
+                        <button class="active-btn" type="button" data-type="student">Student services</button>
+                        <button type="button" data-type="employee">Employee services</button>
+                        <button type="button" data-type="parent">Parent services</button>
+                    </div>
+
+                    <div class="boxs mt-5">
+                        <div class="row justify-content-center align-items-center g-lg-5 g-3">
+                            <div class="col-lg-4 col-md-6 col-12 div" data-type="student">
+                                <div class="box" >
+                                    <h3>01</h3>
+                                    <div class="link">
+                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <img src="./assets/images/link.svg" alt="link">
+                                                <h4>School Restaurant</h4>
+                                            </div>
+                                            <img src="./assets/images/arrow.svg" alt="arrow">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 div" data-type="student">
+                                <div class="box" >
+                                    <h3>02</h3>
+                                    <div class="link">
+                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <img src="./assets/images/link.svg" alt="link">
+                                                <h4>Student Responsibilities</h4>
+                                            </div>
+                                            <div>
+                                                <img src="./assets/images/arrow.svg" alt="arrow">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 div" data-type="student">
+                                <div class="box" >
+                                    <h3>03</h3>
+                                    <div class="link">
+                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <img src="./assets/images/link.svg" alt="link">
+                                                <h4>Online E-Learning program</h4>
+                                            </div>
+                                            <img src="./assets/images/arrow.svg" alt="arrow">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 d-none div" data-type="employee">
+                                <div class="box" >
+                                    <h3>01</h3>
+                                    <div class="link">
+                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <img src="./assets/images/link.svg" alt="link">
+                                                <h4>HR online system</h4>
+                                            </div>
+                                            <img src="./assets/images/arrow.svg" alt="arrow">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 d-none div" data-type="employee">
+                                <div class="box" >
+                                    <h3>03</h3>
+                                    <div class="link">
+                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <img src="./assets/images/link.svg" alt="link">
+                                                <h4>Hire with us</h4>
+                                            </div>
+                                            <img src="./assets/images/arrow.svg" alt="arrow">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 d-none div" data-type="parent">
+                                <div class="box" >
+                                    <h3>01</h3>
+                                    <div class="link">
+                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <img src="./assets/images/link.svg" alt="link">
+                                                <h4>Register new student</h4>
+                                            </div>
+                                            <img src="./assets/images/arrow.svg" alt="arrow">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 div d-none"  data-type="parent">
+                                <div class="box">
+                                    <h3>02</h3>
+                                    <div class="link">
+                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <img src="./assets/images/link.svg" alt="link">
+                                                <h4>Manage parents account</h4>
+                                            </div>
+                                            <img src="./assets/images/arrow.svg" alt="arrow">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- school -->
+        <section class="school" id="sections">
+            <div class="container">
+                <div class="main-div">
+                    <h2 class="text-center fw-7 mb-5">School Sections</h2>
+
+                    <div class="row align-items-start justify-content-between g-4">
+                        <div class="col-lg-4  col-12">
+                            <div class="box">
+                                <h3 class="fw-7 mb-5">National Section</h3>
+                                <p>Digital Culture schools for both boys and girls adopts the Ministry of Education’s curriculums in the national stream
+                                from grades 1-12. In addition to that, Digital culture Schools also adopts an advanced curriculum in English Language
+                                that is compatible with the international Standards and the progress of students in English is assessed using MAP tests.
+                                Moreover, Digital culture Schools has added some Arabic language enrichment content, such as free reading and creative
+                                writing. Digital culture Schools also applies the 21th century skills rubrics, as these are common skills that will be
+                                required in the future labour market.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4  col-12">
+                            <div class="box">
+                                <h3 class="fw-7 mb-5">International Section </h3>
+                                <p>In the international stream, Digital Culture Schools for boys and girls adopts the international schools’ curriculums in
+                                national subjects (Arabic Language, Islamic Education, Social Studies) from grades 1 through 12. Additionally, Digital
+                                culture Schools also adopts the Next Generation Science Standards (NGSS) and English Language and Mathematic curriculums
+                                according to the Common Core State Standards CCSS. Digital culture Schools also applies the 21th century skills rubrics
+                                as these are common skills that will be required in the future labour market. The international stream will be
+                                accredited by Cognia.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <div class="box">
+                                <h3 class="fw-7 mb-5">Special needs section</h3>
+                                <p>Digital Culture Schools have a section dedicated to special education students, which apply the highest quality
+                                standards for this category, who are served and taught according to an approved international methodology that suits
+                                individual cases and works to integrate them into the surrounding community as the schools provide services (behavior
+                                modification - speech and communication sessions - occupational therapy - sensory integration This is for students
+                                (intellectual education - behavioral disorders and autism - learning difficulties - sensory and physical disabilities -
+                                hyperactivity and distraction - language and speech disorders - multiple disabilities - hearing impairment - visual
+                                impairment).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <!-- footer -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="main-div">
+                    <div class="row align-items-center justify-content-between g-4">
+                        <div class="col-lg-5 col-md-6 col-12">
+                            <div class="left">
+                                <h4 class="fw-7 mb-lg-4 mb-3">Contact us</h4>
+                                <h2 class="fw-7 mb-lg-4 mb-3">Send your question and you will be answered later .</h2>
+                                <hr>
+                                <div class="phone mt-lg-4 mt-3">
+                                    <a href="tel:0539755053" target="_blank" class="d-flex align-items-center justify-content-between">
+                                        <i class="fa-solid fa-phone-volume"></i> <h4>0539755053</h4>
+                                    </a>
+                                </div>
+                                <div class="map mt-lg-4 mt-3">
+                                    <a href="#" target="_blank" class="d-flex align-items-center justify-content-between">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <h4>Google map</h4>
+                                        <img src="./assets/images/arrow.svg" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6 col-12">
+                            <div class="right">
+                                <form action="">
+                                    <input type="text" name="name" placeholder="Name" id="name">
+                                    <input type="text" name="number" placeholder="Phone Number" id="number">
+                                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                                    <input type="submit" value="SEND">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <footer>
+                <div class="second-part pt-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-2 col-12 mt-3">
+                                <a href="/">
+                                    <img class="footer-logo" src="./assets/images/logo.svg" alt="MuzeOne" />
+                                </a>
+                            </div>
+                            <div class="col-lg-5 col-md-7 col-12 mt-3">
+                                <ul class="footer-links list-unstyled align-items-start  justify-content-between d-flex  m-0">
+                                    <li>
+                                        <a href="/" class="navLink">
+                                            Home
+                                        </a>
+                                    </li>
+            
+                                    <li>
+                                        <a href="#" class="navLink ">
+                                            About Us
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="navLink ">
+                                            Our Services
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="navLink ">
+                                            Our Sections
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="navLink ">
+                                            Contacts
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-2 col-12 mt-3 d-flex justify-content-end">
+                                <ul class="social-links list-unstyled align-items-start  d-flex w-50 justify-content-lg-between  justify-content-center">
+                                    <li>
+                                        <a href="/" class="navLink">
+                                            <img src="./assets/images/insta.svg" alt="insta">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/" class="navLink">
+                                            <img src="./assets/images/twitter.svg" alt="twitter">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/" class="navLink">
+                                            <img src="./assets/images/facebook.svg" alt="facebook">
+                                        </a>
+                                    </li>
+            
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="footer-line mb-3" />
+                        <div class="last-footer-section">
+                            <p class="text-center">© Copyrights Digital Culture School 2023 All rights reserved power by <span> ccit
+                                    solutions ❤️ </span></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+  
+        <!-- End of application secion -->
+    </main>
+
+    <!-- to top btn -->
+    <div class="scroll-top">
+        <div class="icon"><span>&#8593;</span></div>
+    </div>
+
+
+ 
+    <!-- End of Footer section -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="./js/main.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 700, // values from 0 to 3000, with step 50ms
+            easing: 'ease',
+        });
+    </script>
+</body>
+
+</html>

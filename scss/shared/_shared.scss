@@ -1,0 +1,279 @@
+// main-header
+.main-head {
+    .subtitle {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 55px;
+    }
+    .title {
+        font-weight: 500;
+        font-size: 12px;
+    }
+    @media screen and (min-width: 767px) {
+        .subtitle {
+            font-size: 48px;
+        }
+        .title {
+            font-size: 24px;
+        }
+    }
+}
+
+// img abs
+.img-absolute {
+    position: absolute;
+    left: -20px;
+    top: 0%;
+    width: 200px;
+    z-index: -1;
+}
+
+// scroll to top
+.scroll-top {
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    color: white;
+    transform: translate(-100px, -1000px);
+    z-index: 55;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    opacity: 0;
+    @include ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    .icon {
+        background-color: $primary-color;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        @include ease;
+        transform: scale(0.8);
+    }
+    span {
+        @include ease;
+    }
+    &:hover {
+        cursor: pointer;
+        .icon {
+            width: 60px;
+            height: 60px;
+            transform: scale(1);
+            background-color: $primary-color;
+        }
+        span {
+            transform: translateY(-5px) scale(1.1);
+        }
+    }
+}
+.scroll-top.active {
+    transform: translate(0);
+    opacity: 1;
+}
+
+// color primary
+.cl-primary {
+    color: $primary-color;
+}
+
+// style back
+.back {
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+    max-width: max-content;
+    @include ease;
+    .icon {
+        width: 40px;
+        height: 40px;
+        border: 2px solid;
+        @include ease;
+        [dir="rtl"] & {
+            transform: rotate(180deg);
+        }
+    }
+    &:hover {
+        color: $primary-color;
+        .icon {
+            background-color: $primary-color;
+            border-color: $primary-color;
+            color: white;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        font-size: 0.9rem;
+
+        .icon {
+            width: 34px;
+            height: 34px;
+            border: 1px solid;
+            padding-top: 0.1rem;
+        }
+    }
+}
+
+// style form
+.muze-form {
+    position: sticky;
+    label {
+        font-weight: 600;
+        color: #202224;
+        font-size: 18px;
+        .req {
+            color: #f43249;
+        }
+    }
+    .input-container {
+        position: relative;
+
+        input:not([type="checkbox"]):not([type="radio"]),
+        textarea,
+        select {
+            font-weight: 500;
+            font-size: 1.1rem;
+            border-radius: 6px;
+            border: 1px solid #e8e9f3;
+            outline: none;
+            background-color: transparent;
+            &:focus {
+                border-color: $primary-color;
+                box-shadow: none;
+                &::placeholder {
+                    opacity: 0.2;
+                }
+            }
+        }
+        input,
+        select {
+            height: 64px;
+        }
+        input {
+            &::placeholder {
+                color: $text-color-light;
+                transition: all 2s ease;
+            }
+        }
+        textarea {
+            resize: none;
+        }
+        .phone-input {
+            position: relative;
+            input {
+                width: 100%;
+                padding-inline-start: 75px;
+            }
+            .phone {
+                position: absolute;
+                width: 66px;
+                left: 0px;
+                top: 0%;
+                border-inline-end: 1px solid currentColor;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                [dir="rtl"] & {
+                    left: auto;
+                    right: 0;
+                }
+            }
+        }
+        .phone-input {
+            .phone {
+                color: #c4c4c4;
+                border-color: #e2e8f0;
+                @include ease;
+            }
+
+            input:focus ~ .phone {
+                border-color: $primary-color;
+                color: $primary-color;
+            }
+        }
+    }
+
+    // file Uplader
+    .file-container {
+        position: relative;
+        height: 100px;
+        input {
+            z-index: 9;
+            position: relative;
+            opacity: 0;
+            cursor: pointer;
+            z-index: 8;
+            height: 100px;
+            color: $primary-color;
+        }
+        input:valid + .attach span {
+            transform: translateY(-50px);
+            background-color: white;
+            padding: 0 0.2rem;
+        }
+
+        input:valid + .attach span.hent {
+            transform: translateY(50px);
+            background-color: white;
+        }
+        input:valid + .attach {
+            background-color: transparent;
+        }
+        input:valid {
+            opacity: 1;
+            padding: 2rem 1rem;
+        }
+        .attach {
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            inset: 0;
+            background-color: transparent;
+            border: 2px dashed #e8e9f3;
+            cursor: pointer;
+            border-radius: 12px;
+            img {
+                width: 20px;
+            }
+            span {
+                @include ease;
+                &.text {
+                    color: #202224;
+                }
+            }
+            span.hent {
+                color: $text-color-light;
+                font-size: 14px;
+
+                position: absolute;
+                right: 1rem;
+                @media screen and (max-width: 500px) {
+                    transform: translateY(32px);
+                    background-color: white;
+                    padding: 0 0.2rem;
+                    font-size: 12px;
+                }
+                [dir="rtl"] & {
+                    right: auto;
+                    left: 1rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 767px) {
+        label {
+            font-size: 20px;
+            line-height: 22px;
+        }
+    }
+}

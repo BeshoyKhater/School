@@ -1,0 +1,91 @@
+footer {
+    .second-part {
+        background: #fff;
+
+        .footer-logo {
+            width: 98.97px;
+            height: 81.89px;
+            object-fit: contain;
+
+            @media screen and (max-width: 768px) {
+                text-align: center;
+                margin: auto;
+                display: block;
+            }
+        }
+
+        .footer-links {
+            gap: 1rem;
+            a {
+                color: $primary-color;
+                font-weight: 700;
+            }
+
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+
+                li {
+                    display: block;
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+
+            @media screen and (max-width: 991px) {
+                .navLink {
+                    font-size: 14px;
+                    line-height: auto;
+                }
+            }
+        }
+
+        .social-links {
+            img {
+                height: 1rem;
+                width: 1rem;
+            }
+            a {
+                border: 1px solid $primary-color;
+                width: 44px;
+                height: 44px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                @media screen and (max-width: 991px) {
+                    width: 35px;
+                    height: 35px;
+                }
+                @media screen and (max-width: 768px) {
+                    margin: 15px 0;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                width: 84% !important;
+                margin: auto;
+                display: flex;
+                gap: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .footer-line {
+            border: 1px solid #D7D7D7;
+
+        }
+
+        .last-footer-section {
+            p {
+                font-weight: 400;
+                font-size: .8rem;
+                color: #030104;
+                padding-top: 9px;
+
+                span {
+                    color: #942362;
+                }
+            }
+        }
+    }
+}

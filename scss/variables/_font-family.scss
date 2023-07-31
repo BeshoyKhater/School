@@ -1,0 +1,13 @@
+// Font Family
+@font-face {
+  font-family: "calibri-400";
+  src: url("../../assets/fonts/Calibri\ Light.ttf");
+}
+@font-face {
+  font-family: "calibri-700";
+  src: url("../../assets/fonts/Calibri\ Bold.TTF");
+}
+
+.fw-7 {
+    font-family: "calibri-700";
+}

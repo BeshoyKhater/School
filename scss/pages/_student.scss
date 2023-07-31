@@ -1,0 +1,67 @@
+// student Page
+ .student-banner{
+   // margin-top: 115px;
+   @include imageBackground("../../assets/images/bg.png");
+   height:550px;
+   @media screen and (max-width: 576px) {
+      height: 200px;
+   }
+   position: relative;
+   &::before{
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: rgba(0, 28, 61, 0.7);
+   }
+  .student-banner-content{
+   color: #fff;
+   position: relative;
+   p{
+      color:rgba(255, 255, 255, 1);
+      font-size: 1rem;
+      font-weight: 400;
+      opacity: .6;
+      span{
+         height: 3px;
+         width: 3px;
+         border-radius: 50%;
+         background-color:rgba(255, 255, 255, 1);
+         margin: 0 3px;
+      }
+   }
+   h3{
+      color:rgba(255, 255, 255, 1);
+      font-size: 2.1rem;
+      font-weight: 700;
+   }
+  }
+ }
+ .student-main-content{
+   width: 70%;
+   @media screen and (max-width: 768px) {
+      width: 90%;
+   }
+   margin: auto;
+   h3{
+      &.title{
+         color: #0F192D;
+         font-weight: 700;
+         font-size: 1.6rem;
+      }
+   }
+   p{
+      &.text{   
+         color: #878CBD;
+         font-weight: 400;
+         font-size: 1.1rem;
+      }
+   }
+   img{
+      margin-inline-end: 8px;
+      width: 1.3rem;
+      height: 1.3rem;
+   }
+ }

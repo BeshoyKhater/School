@@ -1,0 +1,37 @@
+// Global stylesheet where import all other stylesheets 
+
+// Variable
+@import "./variables/variables";
+
+// Mixins
+@import "./mixins/mixins";
+
+
+// Fonts
+@import "./fonts/fonts";
+
+// Icon Fonts 
+@import "./icon-fonts/icon-fonts";
+
+// Base
+@import "./base/base"; 
+
+// Shared
+@import "./shared/shared"; 
+
+// Themes 
+@import "./themes/themes";
+
+// Pages 
+@import "./pages/pages";
+
+// Components
+@import "./components/components";
+
+// Utilities
+@import "./utilities/utilities";
+
+
+// height services and portfolio
+// acheel links w logo footer
+// apply for m7tag ytzbt

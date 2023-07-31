@@ -1,0 +1,75 @@
+// Colors
+
+$dark-color: #171821;
+
+$dark-color-bg: #1d1e26;
+$light-color-bg: #f2f6f6;
+
+$primary-color: #001C3D;
+$secondary-color: #d0e957;
+
+$text-color: #0f2137;
+$text-color-light: #8890a0;
+$white-color: #ffffff ;
+$white-dark: rgba(255, 255, 255, 1);
+
+$purple-color: #878CBD;
+
+$dark-red:#942362;
+
+// width container
+$container-width-sm: 90%;
+$container-width-md: 85%;
+$container-width-lg: 80%;
+$container-width-xl: 75%;
+
+//breakpoint
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+
+// // =====================  breakpoint (lg) =================
+@media screen and (max-width: $breakpoint-lg) {
+    .container {
+        width: $container-width-lg;
+    }
+}
+
+// // =====================  breakpoint (md) =================
+@media screen and (max-width: $breakpoint-md) {
+    .container {
+        width: $container-width-md;
+    }
+}
+
+// // =====================  breakpoint (sm) =================
+@media screen and (max-width: $breakpoint-sm) {
+    h1 {
+        font-size: 25px !important;
+    }
+
+    h2 {
+        font-size: 24px !important;
+    }
+
+    h3 {
+        font-size: 20px !important;
+    }
+
+    h4,
+    h5 {
+        font-size: 15px !important;
+    }
+
+    span,
+    p,
+    h6,a,button {
+        font-size: 12px !important;
+    }
+
+    .container {
+        width: $container-width-sm;
+    }
+}
